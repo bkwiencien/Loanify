@@ -3,31 +3,31 @@ module.exports = function(sequelize, DataTypes){
 		paymentNumber: {
 			type: DataTypes.FLOAT,
 			validate: {
-				len[1, 11]
+				len: [1, 11]
 			}
 		},
 		principal: {
 			type: DataTypes.FLOAT,
 			validate: {
-				len[1, 11]
+				len: [1, 11]
 			}
 		},
 		interest:  {
 			type: DataTypes.FLOAT,
 			validate: {
-				len[1, 11]
+				len: [1, 11]
 			}
 		},
 		monthlyPayment: {
 			type: DataTypes.FLOAT,
 			validate: {
-				len[1, 11]
+				len: [1, 11]
 			}
 		},
 		additionalPayment: {
 			type: DataTypes.FLOAT,
 			validate: {
-				len[1, 11]
+				len: [1, 11]
 			},
 			defaultValue: 0
 		}

@@ -4,10 +4,10 @@ var methodOverride = require('method-override');
 var path = require('path');
 var sequelize = require('sequelize');
 
+var db = require('./models');
+
 var app = express();
 var PORT = process.env.PORT || 8080;
-
-var db = require('./models/ledger.js');
 
 app.use(express.static(path.join(__dirname, 'public')));
 

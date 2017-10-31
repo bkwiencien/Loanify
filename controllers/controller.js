@@ -10,4 +10,4 @@
 
  router.get('/calculator', function(req, res){
  	res.redirect('/calculator');
- })
+ });
