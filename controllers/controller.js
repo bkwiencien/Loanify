@@ -2,10 +2,11 @@
 
  var router = express.Router();
 
- var db = require('..models/');
+ var db = require('../models');
 
  router.get('/', function(req, res){
- 	res.redirect('/index');
+ 	console.log('!');
+ 	res.render('index');
  });
 
  router.get('/calculator', function(req, res){
