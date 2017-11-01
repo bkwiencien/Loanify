@@ -3,7 +3,8 @@
     "username": "root",
     "password": "root",
     "database": "loanify",
-    "host": "127.0.0.1",
+    "socketPath": " /Applications/MAMP/tmp/mysql/mysql.sock",
+    "port": "3080",
     "dialect": "mysql"
   },
   "production": {
