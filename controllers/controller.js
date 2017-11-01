@@ -5,10 +5,11 @@
  var db = require('../models');
 
  router.get('/', function(req, res){
- 	console.log('!');
- 	res.render('index');
+ 	res.redirect('/home');
  });
 
- router.get('/calculator', function(req, res){
- 	res.redirect('/calculator');
+ router.get('/home', function(req, res){
+ 	return res.render('index');
  });
+
+module.exports = router;

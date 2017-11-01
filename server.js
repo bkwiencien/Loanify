@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var sequelize = require('sequelize');
+var exphbs = require("express-handlebars");
 
 var db = require('./models');
 
@@ -13,8 +14,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(methodOverride('_method'));
 
+app.engine("handlebars", exphbs({
+  defaultLayout: "main"
+}));
+app.set("view engine", "handlebars");
+
 var routes = require('./controllers/controller.js');
-//app.use("/", routes);
+app.use("/", routes);
 
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
