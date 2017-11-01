@@ -1,0 +1,29 @@
+header {
+  height: 500px;
+  background: url(Landing_Header.svg) no-repeat center;
+  background-size: cover;
+}
+
+.img-responsive {
+   position: absolute;
+   margin-top: 150px;
+   margin-left: 417px;
+   margin-bottom: 50px;
+
+}
+ #sectionOne {
+    text-align: center;
+    padding-top: 30px;
+}
+#sectionTwo {
+   text-align: center;
+   padding-top: 30px;
+}
+#sectionThree {
+   text-align: center;
+   padding-top: 30px;
+}
+.material-icons {
+  font-size: 48px;
+  color: white;
+}
