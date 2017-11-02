@@ -18,6 +18,7 @@ app.engine("handlebars", exphbs({
   defaultLayout: "main"
 }));
 app.set("view engine", "handlebars");
+app.use(bodyParser.urlencoded({extended: false}));
 
 var routes = require('./controllers/controller.js');
 app.use("/", routes);
