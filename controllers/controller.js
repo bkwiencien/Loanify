@@ -13,8 +13,12 @@
  });
 
   router.get('/calculator', function(req, res){
- 	return res.render('index');
+ 	return res.render('calculator');
  });
+  router.post('/toto',function(req,res){
+    console.log("hello lizard lips");
+    console.log("in post " + req.body);
+  });
 
 
 module.exports = router;
