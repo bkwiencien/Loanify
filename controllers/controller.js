@@ -18,6 +18,7 @@
   router.post('/toto',function(req,res){
     console.log("hello lizard lips");
     console.log("in post " + req.body.label);
+    res.send("success");
   });
 
 
