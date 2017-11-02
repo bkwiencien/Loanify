@@ -21,7 +21,7 @@
     console.log("hello lizard lips");
     console.log("in post " + req.body.label);
     array = doCalculations(req.body);
-    res.send("success");
+    res.send(array);
   });
   function doCalculations(argo) {
     var rows = [];
