@@ -12,4 +12,9 @@
  	return res.render('index');
  });
 
+  router.get('/calculator', function(req, res){
+ 	return res.render('index');
+ });
+
+
 module.exports = router;
