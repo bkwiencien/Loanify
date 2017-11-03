@@ -63,8 +63,8 @@
             inter = parseFloat((currentPrincipal*interestRate));
             interByMonth = parseFloat(inter/12.0);
             totalInterest = totalInterest + interByMonth;
-            currentPrincipal = 0; 
-            var rr = new Row(paymentNumber,currentPrincipal,interByMonth,monthlyPayment+additionalPrincipal);
+            var rr = new Row(paymentNumber,currentPrincipal,interByMonth,currentPrincipal);
+            currentPrincipal = 0;
             rows.push(rr);
         }else {
           inter = parseFloat((currentPrincipal * interestRate));

@@ -5,13 +5,15 @@
         <th>Payment Number</th> 
         <th>Principal</th> 
         <th>Interest</th> 
+        <th>payment amt</th>
     </thead> 
     <tbody> 
         {{#each data}} 
         <tr> 
-            <td>{{paymentnumber}}</td> 
-            <td>{{principal}}</td> 
-            <td>{{interest}}</td> 
+            <td style="padding: 15px">{{paymentnumber}}</td> 
+            <td style="padding: 15px">{{principal}}</td> 
+            <td style="padding: 15px">{{interest}}</td> 
+            <td style="padding: 15px">{{monthlypayment}}</td>
         </tr> 
         {{/each}} 
     </tbody> 
