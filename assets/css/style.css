@@ -1,29 +1,220 @@
 header {
   height: 500px;
-  background: url(../images/Landing_Header.svg) no-repeat center;
+  background: url(../images/Landing_Header2.svg) no-repeat center;
   background-size: cover;
 }
-
-.img-responsive {
-   position: absolute;
-   margin-top: 150px;
-   margin-left: 417px;
-   margin-bottom: 50px;
-
+.navbar-transparent {
+  height: 55px;
 }
- #sectionOne {
-    text-align: center;
-    padding-top: 30px;
-}
-#sectionTwo {
-   text-align: center;
-   padding-top: 30px;
-}
-#sectionThree {
-   text-align: center;
-   padding-top: 30px;
+.navbar-brand {
+  font-size: 29px;
+  font-family: 'Ubuntu Condensed', italic;
+  color: #A6D785;
+  margin-left: 15px;
 }
 .material-icons {
   font-size: 48px;
+  color: #A6D785;
+  padding-top: 20px;
+}
+.hero-title {
+    font-size: 42px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 105px;
+  }
+.hero-content {
+    position: absolute;
+    font-size: 14px:
+    top: 75%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+}
+.value-container {
+  height: 350px;
+}
+.value-section-left {
+  vertical-align: center;
+  text-align: left;
+  margin-top: 42px;
+  padding-left: 78px;
+}
+.value-header {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 36px;
+  text-align: left;
+  margin-top: 12px;
+  padding-left: 18px;
+}
+.value-paragraph {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 36px;
+  padding-left: 18px;
+  color: #A6D785;
+}
+.value-points {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 18px;
+  color: grey;
+}
+.value-section-right{
+  vertical-align: center;
+  padding-left: 78px;
+}
+.payoff-visual {
+  text-align: center;
+}
+.section-two {
+text-align: left;
+ margin-top: 42px;
+  padding-left: 108px;
+  padding-right: 18px;
+  background-color: #f1f1f1;
+}
+.payoff-header {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 36px;
+  margin-top: 12px;
+}
+.payoff-paragraph {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+  padding-top: 12px;
+  color: #A6D785;
+}
+.payoff-points {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 16px;
+  padding-top: 6px;
+  color: grey;
+}
+.numbers-container {
+  height: 350px;
+  background: #DCE35B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.numbers-header {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+    color: green;
+  }
+  .interest-rate {
+  }
+.current-interest-rate {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 68px;
+  text-align: center;
+  margin-top: 65px;
+  color: white;
+}
+.interest-rate-title {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #A6D785;
+}
+.rounded {
+  height: 250px;
+  width: 250px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 165px;
+  }
+  .news-container {
+    height: 600px;
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+  }
+  .news-header {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: grey;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+    a {
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: .25s box-shadow;
+  transition: .25s box-shadow;
+}
+  .card-title {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding-top: 13px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .text-muted {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 12px;
+  }
+  .card-text {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 13px;
+    color:  grey;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+.card:focus, .card:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.card-inverse .card-img-overlay {
+  background-color: rgba(51, 51, 51, 0.85);
+  border-color: rgba(51, 51, 51, 0.85);
+}
+.options-content {
+  height: 350px;
+  padding-top: 25px;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#purchase {
+    text-align: center;
+    padding-top: 30px;
+}
+#refinance {
+  text-align: center;
+  padding-top: 30px;
+}
+#lineofcredit{
+   text-align: center;
+   padding-top: 30px;
+}
+.main-tagline {
   color: white;
 }
