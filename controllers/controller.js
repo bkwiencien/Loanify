@@ -22,6 +22,10 @@
     console.log("in post " + req.body.label);
     array = doCalculations(req.body);
     res.send(array);
+   // var dataobj  = {
+   //   data: array
+   // }
+   // res.render('handlebars-file',dataobj);
   });
   function doCalculations(argo) {
     var rows = [];
