@@ -21,11 +21,12 @@
     console.log("hello lizard lips");
     console.log("in post " + req.body.label);
     array = doCalculations(req.body);
-    res.send(array);
+    //res.send(array);
     var dataobj  = {
       data: array
     }
-  //  res.render('results',dataobj);
+    console.log(dataobj);
+    res.render('results',dataobj);
   });
   function doCalculations(argo) {
     var rows = [];

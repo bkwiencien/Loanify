@@ -1,17 +1,18 @@
 <h1>Payment Ledger</h1>
-<script id="resusults" type="text/x-handlebars-template"> <table>
+<!--<script id="results" type="text/x-handlebars-template"/>  -->
+ <table>
     <thead> 
         <th>Payment Number</th> 
         <th>Principal</th> 
         <th>Interest</th> 
     </thead> 
     <tbody> 
-        {{#array}} 
+        {{#each data}} 
         <tr> 
             <td>{{paymentnumber}}</td> 
             <td>{{principal}}</td> 
             <td>{{interest}}</td> 
         </tr> 
-        {{/array}} 
+        {{/each}} 
     </tbody> 
 </table> 
