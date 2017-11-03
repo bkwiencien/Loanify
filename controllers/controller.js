@@ -71,8 +71,10 @@
           interByMonth = parseFloat(inter/12.0);
           currentPrincipal = parseFloat((currentPrincipal + interByMonth));
           currentPrincipal = currentPrincipal - monthlyPayment - additionalPrincipal;
-          currentPrincipal = Math.round(currentPrincipal,-2);
+         // currentPrincipal = Math.round(currentPrincipal,-2);
+          currentPrincipal = currentPrincipal.toFixed(2);
           paymentNumber++;
+          totalInterest = totalInterest + interByMonth;
           var rrr = new Row(paymentNumber,currentPrincipal,interByMonth,monthlyPayment+additionalPrincipal);
             rows.push(rrr);
           console.log(paymentNumber+ " " + currentPrincipal + " " + monthlyPayment + " "+ additionalPrincipal);
