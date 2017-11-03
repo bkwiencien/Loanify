@@ -39,7 +39,7 @@
     function Row(ppaymentnumber,pprincipal,pinterest,pmonthlypayment) {
       this.paymentnumber = ppaymentnumber;
       this.principal = pprincipal;
-      this.interest = pinterest;
+      this.interest = pinterest.toFixed(2);
       this.monthlypayment = pmonthlypayment;
     };
     var inter = 0;
