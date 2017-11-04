@@ -17,13 +17,15 @@
   router.get('/calculator', function(req, res){
  	return res.render('calculator');
  });
-
-  router.get('/signup', function(req,res){
-    db.User.create({
+  router.get('/signup', function(req, res){
+  return res.render('signup');
+ });
+  router.post('/signupnow', function(req,res){
+    db.user.create({
       user: req.body.user,
       password: req.body.password
     }).then(function(login){
-      console.log(login);
+      console.log(login.user);
       res.redirect('/');
     })
 
