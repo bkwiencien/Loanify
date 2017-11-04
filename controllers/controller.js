@@ -36,10 +36,7 @@
   })
 
   router.post('/toto',function(req,res){
-    console.log("hello lizard lips");
-    console.log("in post " + req.body.label);
     array = doCalculations(req.body);
-    //res.send(array);
     var dataobj  = {
       data: array
     }
@@ -62,19 +59,16 @@
     };
     var inter = 0;
     var interByMonth = 0;
-    var myLabel = "";
     var paymentNumber = 0;
     var currentPrincipal = 0;
     var monthlyPayment = 0;
     var interestRate = 0;
     var additionalPrincipal = 0;
     var totalInterest = 0;
-    myLabel = argo.label;
     currentPrincipal = parseFloat(argo.currentprincipal);
     monthlyPayment = parseFloat(argo.mpayment);
     interestRate = parseFloat(argo.interestrate);
     additionalPrincipal = parseFloat(argo.additional);
-    console.log("in doCalculations label " + currentPrincipal + " " + interestRate);
     while (currentPrincipal > 0) {
         if ((monthlyPayment + additionalPrincipal) > currentPrincipal) {
             paymentNumber++;
