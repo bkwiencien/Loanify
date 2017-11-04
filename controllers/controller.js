@@ -83,7 +83,6 @@
           interByMonth = parseFloat(inter/12.0);
           currentPrincipal = parseFloat((currentPrincipal + interByMonth));
           currentPrincipal = currentPrincipal - monthlyPayment - additionalPrincipal;
-         // currentPrincipal = Math.round(currentPrincipal,-2);
           currentPrincipal = currentPrincipal.toFixed(2);
           paymentNumber++;
           totalInterest = totalInterest + interByMonth;
