@@ -17,6 +17,22 @@
   router.get('/calculator', function(req, res){
  	return res.render('calculator');
  });
+
+  router.get('/signup', function(req,res){
+    db.User.create({
+      user: req.body.user,
+      password: req.body.password
+    }).then(function(login){
+      console.log(login);
+      res.redirect('/');
+    })
+
+  });
+
+  router.get('/login', function(req, res){
+    
+  })
+
   router.post('/toto',function(req,res){
     console.log("hello lizard lips");
     console.log("in post " + req.body.label);
