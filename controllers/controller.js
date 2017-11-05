@@ -41,8 +41,9 @@
     var errorMessage = {
       message: mess
     }
-    mess = checkValidity(req.body);
-    if (mess.length == 0){
+    errorMessage.message = checkValidity(req.body);
+    console.log("message returned was "+errorMessage.message);
+    if (errorMessage.message.length == 0){
       dataValid=true;
     } else {
       dataValid=false;
@@ -58,7 +59,25 @@
   }
   });
   function checkValidity(arg) {
-    return("");
+    var messo = "";
+    console.log("in checkValidity " + arg.currentprincipal);
+    currentPrincipal = parseFloat(arg.currentprincipal);
+    monthlyPayment = parseFloat(arg.mpayment);
+    interestRate = parseFloat(arg.interestrate);
+    additionalPrincipal = parseFloat(arg.additional);
+    if (currentPrincipal <= 0) {
+       messo = "outstanding balance must be > 0";
+       return(messo);
+    }
+    if (interestRate >= 1) {
+       messo = "interest rate  must be  < 1";
+       return(messo);
+    }
+    if (monthlyPayment <= 0) {
+       messo = "monthly payment   must be  positive";
+       return(messo);
+    }
+    return(messo);
   }
   function doCalculations(argo) {
     var rows = [];
