@@ -42,7 +42,6 @@
       message: mess
     }
     errorMessage.message = checkValidity(req.body);
-    console.log("message returned was "+errorMessage.message);
     if (errorMessage.message.length == 0){
       dataValid=true;
     } else {
@@ -60,7 +59,6 @@
   });
   function checkValidity(arg) {
     var messo = "";
-    console.log("in checkValidity " + arg.currentprincipal);
     currentPrincipal = parseFloat(arg.currentprincipal);
     monthlyPayment = parseFloat(arg.mpayment);
     interestRate = parseFloat(arg.interestrate);
