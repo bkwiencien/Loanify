@@ -36,13 +36,30 @@
   })
 
   router.post('/toto',function(req,res){
+    var dataValid = true;
+    var mess ="";
+    var errorMessage = {
+      message: mess
+    }
+    mess = checkValidity(req.body);
+    if (mess.length == 0){
+      dataValid=true;
+    } else {
+      dataValid=false;
+    }
+    if (dataValid){
     array = doCalculations(req.body);
     var dataobj  = {
       data: array
     }
-    console.log(dataobj);
     res.render('results',dataobj);
+  } else {
+    res.render('errors',errorMessage)
+  }
   });
+  function checkValidity(arg) {
+    return("");
+  }
   function doCalculations(argo) {
     var rows = [];
     var row = {
