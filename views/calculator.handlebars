@@ -1,34 +1,63 @@
-<div class="container">
-		<div class="jumbotron text-center">
-			<h1>Mortgage Calculator</h1>
 
-		</div>
-	<div class="panel panel-primary">
-	  <div class="panel-heading">Specify parameters of Mortgage</div>
-	  <div class="panel-body">
+<header class="calculator-header">
+  <nav class="navbar-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="#">Loanify</a>
 
-	  <div class="form-group">
-	  <form id="form1" method="post" action="/toto">
+        <a class="navbar-account" href="#">
+          <img src="images/account_icon.png" width="36" height="36" alt="account-icon">
+        </a>
+
+        <a class="navbar-news" href="#">
+          <img src="images/market_icon.png" width="36" height="36" alt="news-icon">
+        </a>
+
+        <a class="navbar-market" href="#">
+          <img src="images/news_icon.png" width="36" height="36" alt="market-icon">
+        </a>
+
+        <a class="navbar-calculator" href="#">
+          <img src="images/calculator_icon.png" width="36" height="36" alt="calculator-icon">
+        </a>
+
+        </a>
+
+        </div>
+
+  </nav>
+
+
+<div class="hero-content text-center">
+   <h2 class="calculator-title noslider">Mortgage Payoff Calculator</h2>
+   <p1 class"calculator-description">Fill in YOUR current mortgage information</p1>
+</div>
+
+</header>
+
+	<div class="panel text-center">
+
+		<div class="form-group">
+	 <form id="form1" method="post" action="/toto">
+	 </div>
+      <div class="form-group-principal">
+	    <input id="principal-input" placeholder="Principal Balance" name="currentprincipal"></input><br>
+			<label class="payoff-label">UnPaid Principal Balance</label><br>
 	  </div>
-      <div class="form-group">
-	    <label>Current Outstanding Principal</label><br>
-	    <input id="principal-input" name="currentprincipal"></input><br>
+	  <div class="form-group-payment">
+	   <input id="payment-input" placeholder="Monthly Payment" name="mpayment" ></input><br>
+		 <label class="payoff-label">Amount You Pay Monthly</label><br>
 	  </div>
-	  <div class="form-group">
-	    <label>Monthly Payment</label><br>
-	    <input id="payment-input" name="mpayment"></input><br>
+	  <div class="form-group-rate">
+	  	<input id="rate-input" placeholder="Interest Rate" name="interestrate"></input><br>
+			 <label class="payoff-label">Enter as a decimal(.04 is 4%)</label><br>
 	  </div>
-	  <div class="form-group">
-	    <label>Interest Rate (as a decimal i.e .04 for 4%)</label><br>
-	    <input id="rate-input" name="interestrate"></input><br>
+	  <div class="form-group-additional">
+			<input id="additional-input" placeholder="Additional Principal" name="additional"></input><br>
+	    <label class="payoff-label">The amount you want to pay extra each month</label><br>
 	  </div>
-	  <div class="form-group">
-	    <label>Additional Principal</label><br>
-	    <input id="additional-input" name="additional"></input><br>
-	  </div>
-	  <button class="btn btn-primary" id="submit" >Submit</button>
+	  <button class="btn btn-primary" id="submit">Submit</button>
 	  </form>
 	</div>
 	</div>
 	<div id="datadiv">
-    </div>		
+    </div>
