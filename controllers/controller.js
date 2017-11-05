@@ -122,7 +122,7 @@
           totalInterest = totalInterest + interByMonth;
           var rrr = new Row(paymentNumber,currentPrincipal,interByMonth,monthlyPayment+additionalPrincipal);
             rows.push(rrr);
-          console.log(paymentNumber+ " " + currentPrincipal + " " + monthlyPayment + " "+ additionalPrincipal);
+         // console.log(paymentNumber+ " " + currentPrincipal + " " + monthlyPayment + " "+ additionalPrincipal);
         }
     }
     return(rows);
