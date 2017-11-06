@@ -1,63 +1,50 @@
-
-<header class="calculator-header">
-  <nav class="navbar-transparent">
+<section id= "results-header">
     <div class="container">
-        <a class="navbar-brand" href="#">Loanify</a>
-
-        <a class="navbar-account" href="#">
-          <img src="images/account_icon.png" width="36" height="36" alt="account-icon">
-        </a>
-
-        <a class="navbar-news" href="#">
-          <img src="images/market_icon.png" width="36" height="36" alt="news-icon">
-        </a>
-
-        <a class="navbar-market" href="#">
-          <img src="images/news_icon.png" width="36" height="36" alt="market-icon">
-        </a>
-
-        <a class="navbar-calculator" href="#">
-          <img src="images/calculator_icon.png" width="36" height="36" alt="calculator-icon">
-        </a>
-
-        </a>
-
+        <div class = "header-block">
+            <h1 id="paymentLedger">Mortgage Payoff Calculator</h1>
         </div>
+    <div>
+</section>
 
-  </nav>
+<div class="calc">
+  <div class="form-group">
+	<form id="form1" method="post" action="/toto">
+  </div>
+  <p id= "instructions">Enter your amounts into the calculator below to calculate your monthly payments:</p>
+  <br>
+      <div class= "row">
+      	<div class= "col-md-3">
+	      	<div class="form-group-principal">
+		    	<input id="principal-input" placeholder="Enter Principal Balance" name="currentprincipal"></input><br><br>
+				<label class="payoff-label">The amount of loan reaining unpaid, not including interest and other charges</label><br>
+		 	</div>
+		</div>
 
+		<div class= "col-md-3">
+		  	<div class="form-group-payment">
+		   		<input id="payment-input" placeholder="Enter Monthly Payment" name="mpayment" ></input><br><br>
+			 	<label class="payoff-label">The amount a borrower is required to pay each month until a debt is paid off</label><br>
+		  	</div>
+		</div>
 
-<div class="hero-content text-center">
-   <h2 class="calculator-title noslider">Mortgage Payoff Calculator</h2>
-   <p1 class"calculator-description">Fill in YOUR current mortgage information</p1>
+		<div class= "col-md-3">
+		  	<div class="form-group-rate">
+		  		<input id="rate-input" placeholder ="Enter Interest Rate as" name="interestrate"></input><br><br>
+				<label class="payoff-label">The proportion of a loan that is charged as interest to the borrower, typically expressed as an annual percentage of the loan outstanding</label><br>
+		  	</div>
+		</div>
+
+		<div class= "col-md-3">
+		  	<div class="form-group-additional">
+				<input id="additional-input" placeholder="Enter Additional Principal" name="additional"></input><br><br>
+		    	<label class="payoff-label">Paying extra money in addition to your required loan payment to help pay off the principal loan amount faster. By making the extra payment, you also reduce the amount of interest paid.</label><br>
+		  	</div>
+		</div>
+	  </div>
+	  
+	  	<button class="btn btn-primary center" id="submit">Calculate</button>
+	 </form>
+  </div>
 </div>
-
-</header>
-
-	<div class="panel text-center">
-
-		<div class="form-group">
-	 <form id="form1" method="post" action="/toto">
-	 </div>
-      <div class="form-group-principal">
-	    <input id="principal-input" placeholder="Principal Balance" name="currentprincipal"></input><br>
-			<label class="payoff-label">UnPaid Principal Balance</label><br>
-	  </div>
-	  <div class="form-group-payment">
-	   <input id="payment-input" placeholder="Monthly Payment" name="mpayment" ></input><br>
-		 <label class="payoff-label">Amount You Pay Monthly</label><br>
-	  </div>
-	  <div class="form-group-rate">
-	  	<input id="rate-input" placeholder="Interest Rate" name="interestrate"></input><br>
-			 <label class="payoff-label">Enter as a decimal(.04 is 4%)</label><br>
-	  </div>
-	  <div class="form-group-additional">
-			<input id="additional-input" placeholder="Additional Principal" name="additional"></input><br>
-	    <label class="payoff-label">The amount you want to pay extra each month</label><br>
-	  </div>
-	  <button class="btn btn-primary" id="submit">Submit</button>
-	  </form>
-	</div>
-	</div>
-	<div id="datadiv">
-    </div>
+	
+<div id="datadiv"></div>

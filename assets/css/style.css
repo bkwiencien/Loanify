@@ -1,155 +1,45 @@
+body{
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
 header {
   height: 500px;
   background: url(../images/Landing_Header2.svg) no-repeat center;
   background-size: cover;
 }
-.calculator-header {
-  height: 275px;
-  background: url(../images/calculator-header.svg) no-repeat center;
-  background-size: cover;
-}
-.calculator-title {
-    font-size: 48px;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-weight: 800;
-    color: #fff;
-    margin-top: 95px;
-    padding-bottom: 15px
-  }
-
-  .calculator-description {
-    font-size: 42px;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-weight: 800;
-    color: white;
-    margin-top: 100px;
-
-
-  }
-  .panel {
-    font-size: 38px;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-weight: 800;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  }
-
-.payoff-label {
-  padding-top: 2px;
-  padding-bottom: 8px;
-  font-size: 12px;
+#logo {
+  color:white;
+  font-weight:bold;
+  font-size: 30px;
   font-family: 'Ubuntu Condensed', sans-serif;
-  color: black;
-}
-.form-group-principal {
-  padding-top: 15px;
 }
 
-#label-input {
-text-align: center;
-border-radius:25%/100%;
-border:1px solid #000;
-padding: 15px 15px;
-font-size:24px;
-background-color: black;
-color: white;
-
+.navbar-brand a {
+  text-decoration: none;
 }
-#principal-input {
+
+.navbar {
+    background:transparent;
+    border:none;
+}
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+.navbar-calculator, .navbar-market, .navbar-news, .navbar-account{ 
   text-align: center;
-  border-radius:25%/100%;
-  border:1px solid #000;
-  padding: 15px 15px;
-  font-size:24px;
-  background-color: black;
-  color: white;
-}
-#payment-input {
-  text-align: center;
-  border-radius:25%/100%;
-  border:1px solid #000;
-  padding: 15px 15px;
-  font-size:24px;
-  background-color: black;
-  color: white;
-}
-#rate-input {
-  text-align: center;
-border-radius:25%/100%;
-border:1px solid #000;
-padding: 15px 15px;
-font-size:24px;
-background-color: black;
-color: white;
-
-}
-#additional-input {
-  text-align: center;
-  border-radius:25%/100%;
-  border:1px solid #000;
-  padding: 15px 15px;
-  font-size:24px;
-  background-color: black;
-  color: white;
-}
-
-
-.navbar-transparent {
-  height: 36px;
-
-}
-
-
-.navbar-nav {
-  position
-
-
-}
-.navbar-brand {
-  display:inline-block;
-  margin-right: 10px;
-  line-height: inerit;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 32px;
-  font-family: 'Ubuntu Condensed', italic;
-  color: #A6D785;
-
-}
-.navbar-calculator {
-  margin-top: 12px;
-  text-align: center;
-  float: right;
   padding-right: 20px;
-  padding-top: 10px;
   padding-bottom: 10px;
-
 }
-.navbar-market {
-  margin-top: 12px;
-  float: right;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
+.navbar-account{
+  margin-left:900px;
 }
-.navbar-news {
-  margin-top: 12px;
-  float: right;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
-}
-.navbar-account {
-  margin-top: 12px;
-  float: right;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
+.navbar-brand{
+  float:right;
+  position:relative;
 }
 
 .material-icons {
@@ -167,13 +57,11 @@ color: white;
     margin-left: auto;
     text-align: center;
     color: #fff;
-    font-family: 'Ubuntu Condensed', sans-serif;
     font-weight: 800;
     padding-top: 15px;
 }
 .hero-title {
     font-size: 42px;
-    font-family: 'Ubuntu Condensed', sans-serif;
     font-weight: 800;
     color: #fff;
     margin-top: 180px;
@@ -181,8 +69,7 @@ color: white;
   }
 
   .hero-description {
-    font-size: 38px;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
     font-weight: 800;
     color: white;
     margin-top: 125px;
@@ -199,14 +86,12 @@ color: white;
   padding-left: 78px;
 }
 .value-header {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 36px;
   text-align: left;
   margin-top: 12px;
   padding-left: 18px;
 }
 .value-paragraph {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
   text-align: left;
   padding-top: 12px;
@@ -215,7 +100,6 @@ color: white;
   color: #A6D785;
 }
 .value-points {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 16px;
   text-align: left;
   padding-top: 6px;
@@ -237,18 +121,15 @@ text-align: left;
   background-color: #f1f1f1;
 }
 .payoff-header {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 36px;
   margin-top: 12px;
 }
 .payoff-paragraph {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
   padding-top: 12px;
   color: #A6D785;
 }
 .payoff-points {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 16px;
   padding-top: 6px;
   color: grey;
@@ -260,23 +141,19 @@ background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-2
 background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .numbers-header {
-    font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 36px;
     text-align: center;
     padding-top: 30px;
     color: green;
   }
-  .interest-rate {
-  }
+  
 .current-interest-rate {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 68px;
   text-align: center;
   margin-top: 65px;
   color: white;
 }
 .interest-rate-title {
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
   text-align: center;
   color: #A6D785;
@@ -306,7 +183,6 @@ background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, F
   .news-header {
     font-size: 36px;
     text-align: center;
-    font-family: 'Ubuntu Condensed', sans-serif;
     color: grey;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -322,17 +198,14 @@ background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, F
   transition: .25s box-shadow;
 }
   .card-title {
-    font-family: 'Ubuntu Condensed', sans-serif;
     padding-top: 13px;
     font-size: 18px;
     font-weight: bold;
   }
   .text-muted {
-    font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 12px;
   }
   .card-text {
-    font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 13px;
     color:  grey;
     padding-left: 5px;
@@ -371,3 +244,132 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 .main-tagline {
   color: white;
 }
+/*--------calculator.handlebars--------*/
+.form-group{
+  margin-top:100px;
+}
+
+.payoff-label {
+  font-size:15px;
+  padding-right:40px;
+  padding-left:40px;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  color:black;
+}
+
+input::placeholder{
+  color:black;
+  opacity:.6;
+  font-size:15px;
+
+}
+
+#label-input {
+text-align: center;
+border-radius:25%/100%;
+border:1px solid #000;
+padding: 15px 15px;
+font-size:24px;
+background-color: black;
+color: white;
+
+}
+
+
+#principal-input, #payment-input, #rate-input, #additional-input{
+  text-align: center;
+  border-radius:25%/100%;
+  border:1px solid lightgray;
+  padding: 15px 15px;
+  font-size:24px;
+  background-color: lightgray;
+}
+
+#instructions{
+  font-size:20px;
+  color:green;
+}
+
+#submit {
+  width:400px;
+  height:50px;
+  margin:auto;
+  display:block;
+  padding:16px 32px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:white;
+  background: #4CAF50;
+  border:0;
+  font-weight:100;
+  margin-bottom:10px;
+}
+
+#submit:hover{
+  background-color: green;
+}
+  
+/*--------results.handlebars--------*/
+#results-header{
+   height: 500px;
+  background: url(../images/results-header.png) no-repeat center;
+  background-size: cover;
+}
+
+.header-block{
+  position:absolute;
+  margin-top:370px;
+  width:100%;
+  height:120px;
+  left:0;
+  opacity:.8;
+  background: #a6d785 ; 
+  background: -webkit-linear-gradient(left top, green, yellow); 
+  background: -o-linear-gradient(bottom right, green, yellow); 
+  background: -moz-linear-gradient(bottom right, green, yellow); 
+  background: linear-gradient(to bottom right, green, yellow); 
+}
+
+#paymentLedger{
+  font-size: 65px;
+  color:white;
+  text-align:middle;
+}
+
+.box {
+  position:relative;
+  margin-left:-550px;
+  margin-top:30px;
+  top:50%;
+  left:50%;
+
+}
+
+#number{
+  padding-left:100px;
+}
+
+thead{
+  font-size:25px;
+}
+
+td{
+  font-size:20px;
+  text-align:center;
+  padding: 10px 0;    
+  border-width: 1px 0; 
+  border-color: rgba(0, 0, 0, .6);
+  border-style: solid;
+}
+
+table tr:nth-child(odd) td{
+  background: white;
+}
+table tr:nth-child(even) td{
+  background:lightgray;
+
+}
+
+
